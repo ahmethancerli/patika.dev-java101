@@ -1,0 +1,22 @@
+package kdvHesaplama;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String [] args) {
+		
+		Scanner inp = new Scanner(System.in);
+		
+		double tutar, kdvOran = 0.18, kdvTutar, kdvliTutar;
+		
+		System.out.print("Ücret tutarını girin : ");
+		tutar = inp.nextDouble();
+		
+		kdvTutar = tutar * kdvOran;
+		kdvliTutar = tutar + kdvTutar;
+		
+		System.out.print("KDV'siz oran : " + tutar);
+		System.out.print("KDV oranı : " + kdvOran);
+		System.out.print("KDV'li tutar : " + kdvliTutar);
+	}
+}
