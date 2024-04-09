@@ -28,7 +28,10 @@ public class Main {
 			System.out.println("SONUÇ : " + (n1 * n2));
 			break;
 		case 4:
-			System.out.println("SONUÇ : " + (n1 / n2));
+			if(n2 != 0)
+				System.out.println("SONUÇ : " + (n1 / n2));
+			else
+				System.out.print("BİR SAYI 0'A BÖLÜNEMEZ...");
 			break;
 		default:
 			System.out.print("GEÇERSİZ...");
